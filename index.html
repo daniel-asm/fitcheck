@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Closet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Digital Closet</h1>
+        <p>Upload a full-body picture and your clothes to see your new look.</p>
+
+        <div class="upload-grid">
+            <div class="upload-section">
+                <label for="face-input">1. You</label>
+                <input type="file" id="face-input" accept="image/*">
+                <img id="face-preview" class="preview" src="" alt="Face preview">
+            </div>
+            <div class="upload-section">
+                <label for="shirt-input">2. Your Shirt</label>
+                <input type="file" id="shirt-input" accept="image/*">
+                <img id="shirt-preview" class="preview" src="" alt="Shirt preview">
+            </div>
+            <div class="upload-section">
+                <label for="pants-input">3. Your Pants</label>
+                <input type="file" id="pants-input" accept="image/*">
+                <img id="pants-preview" class="preview" src="" alt="Pants preview">
+            </div>
+            <div class="upload-section">
+                <label for="shoes-input">3. Your Shoes</label>
+                <input type="file" id="shoes-input" accept="image/*">
+                <img id="shoes-preview" class="preview" src="" alt="Shoes preview">
+            </div>
+        </div>
+
+        <button id="generate-btn">Generate Outfit</button>
+
+        <div id="result-container">
+            <h2>Your New Look:</h2>
+            <div id="loading" class="spinner" style="display: none;"></div>
+            <img id="result-image" src="" alt="">
+        </div>
+    </main>
+</body>
+</html>
