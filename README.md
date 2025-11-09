@@ -49,7 +49,7 @@ Video Demo: https://youtu.be/j7n_oePJHEg
 4.  Open `src/main.py` and paste your Google Gemini API Key into the `GOOGLE_API_KEY` variable.
 5.  Run the backend server:
     ```bash
-    python src/main.py or python3 src/main.py
+    python src/main.py or python3 src/main.py #depending on your version
     ```
     The server will run on `http://127.0.0.1:8000`. Leave this terminal running.
 
