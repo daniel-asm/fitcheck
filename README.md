@@ -2,6 +2,8 @@
 
 FitCheck is a virtual try-on application built for HackUMass 2025. It allows a user to upload a photo of themselves and separate images of clothing, then generates a new, photorealistic image of the user wearing the complete outfit.
 
+Video Demo: https://youtu.be/j7n_oePJHEg
+
 ## What it Does
 
 1.  **Upload:** The user provides four images: a full-body photo, a shirt, a pair of pants, and a pair of shoes.
