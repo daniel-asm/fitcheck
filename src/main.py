@@ -27,7 +27,6 @@ app.add_middleware(
 def generate_try_on_image(person_img: PIL.Image.Image, shirt_img: PIL.Image.Image, pants_img: PIL.Image.Image, shoes_img: PIL.Image.Image):
     """
     Takes 4 PIL Images, returns the generated image as bytes.
-    This version adds GenerationConfig to force an image response.
     """
     print("AI Generation Started...")
 
@@ -66,7 +65,7 @@ def generate_try_on_image(person_img: PIL.Image.Image, shirt_img: PIL.Image.Imag
     try:
         response_2 = client.models.generate_content(
             model="gemini-2.5-flash-image",
-            contents=[shirt_img, pants_img, shoes_img, person_img, prompt_2],
+            contents=[prompt_2, shirt_img, pants_img, shoes_img, person_img],
         )
     except Exception as e:
         print(f"API call failed directly: {e}")
